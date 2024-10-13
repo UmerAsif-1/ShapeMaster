@@ -7,7 +7,7 @@ public interface ShapeBasic {
 	
 	String printText();
 	
-	Boolean isVisible();
+	boolean isVisible();
 	
 
 }
