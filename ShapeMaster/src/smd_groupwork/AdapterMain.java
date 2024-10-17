@@ -31,15 +31,15 @@ public class AdapterMain {
         visibleRectangle2.changeVisibility(); 
         drawer.addBasicShape(visibleRectangle2);
 
-        // Step 6: Test drawing all shapes
+        //Test drawing all shapes
         drawer.draw(); 
         System.out.println();
 
-        // Step 7: Test growing all shapes
+        // Test growing all shapes
         drawer.grow();
         System.out.println(); 
 
-        // Step 8: Test showing visibility and details of each shape
+        //Test showing visibility and details of each shape
         drawer.showVisibility();
     }
 }
