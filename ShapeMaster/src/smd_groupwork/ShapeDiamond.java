@@ -8,6 +8,10 @@ public class ShapeDiamond implements ShapeSpecial, CanBeColored {
     private double b = 2.0;
     private String color = "No Color"; // Default color
     private static DecimalFormat df2 = new DecimalFormat("#.##");
+    
+    // No-parameter constructor
+    public ShapeDiamond() {
+    }
 
  // Constructor with one parameter for color
     public ShapeDiamond(String color) {
