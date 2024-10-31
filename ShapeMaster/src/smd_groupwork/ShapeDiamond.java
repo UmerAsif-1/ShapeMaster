@@ -20,7 +20,7 @@ public class ShapeDiamond implements ShapeSpecial, CanBeColored {
 
     // Constructor with two parameters for sides
     public ShapeDiamond(double a, double b) {
-        this.a = (a >= 2.0) ? a : 2.0; // Set side a with minimum value
+    	this.a = (a >= 2.0) ? a : 2.0; // Set side a with minimum value
         this.b = (b >= 2.0) ? b : 2.0; // Set side b with minimum value
     }
 
@@ -32,7 +32,7 @@ public class ShapeDiamond implements ShapeSpecial, CanBeColored {
  // Method to calculate the area of the diamond
     @Override
     public double calculateArea() {
-        return (a * b) / 2; // Area formula for a diamond (rhombus)
+        return (a * b); // Area formula
     }
 
     // Method to calculate the perimeter of the diamond

@@ -28,7 +28,7 @@ public class BrushStroke extends Visibility implements ShapeBasic, CanBeColored 
 
     @Override
     public String setColor(String newColor) {
-        this.color = newColor;
+    	this.color = CanBeColored.super.setColor(newColor);;
         return this.color;
     }
 
