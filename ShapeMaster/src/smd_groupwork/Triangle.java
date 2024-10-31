@@ -60,9 +60,10 @@ public class Triangle implements ShapeSpecial, CanBeColored {
     }
 	@Override
     public String setColor(String color) {
-        return this.color = (color.equals("Red") || color.equals("Green") ||
-                             color.equals("Blue") || color.equals("Yellow")) ? color : "No color";
-    }
+	    // Use the method from CanBeColored interface
+	    this.color = CanBeColored.super.setColor(color);
+	    return this.color;
+	}
 
     @Override
     public String getColor() {

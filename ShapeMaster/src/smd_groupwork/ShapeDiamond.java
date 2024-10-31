@@ -51,12 +51,11 @@ public class ShapeDiamond implements ShapeSpecial, CanBeColored {
     // Method to set the color of the shape
     @Override
     public String setColor(String color) {
-        if (color != null && (color.equals("Blue") || color.equals("Green") || 
-                              color.equals("Red") || color.equals("Yellow"))) {
-            this.color = color;
-        }
+        // Use the method from CanBeColored interface
+        this.color = CanBeColored.super.setColor(color);
         return this.color;
     }
+
 
     // Method to get the color of the shape
     @Override
