@@ -31,18 +31,18 @@ public class AdapterMain {
         Rectangle visibleRectangle2 = new Rectangle();  
         drawer.addBasicShape(visibleRectangle2);
      
-     // Add a triangle which is visible with color "Other color" using ShapeAdapter
+        // Add a triangle which is visible with color "Other color" using ShapeAdapter
         Triangle visibleTriangle = new Triangle();
         ShapeAdapter triangleAdapter = new ShapeAdapter(visibleTriangle); 
         visibleTriangle.setColor("Other color");
         drawer.addBasicShape(triangleAdapter);
         
-     // Add a diamond shape which is visible with color "PURPLE" using ShapeAdapter
+        // Add a diamond shape which is visible with color "PURPLE" using ShapeAdapter
         ShapeDiamond purpleDiamond = new ShapeDiamond("PURPLE");
         ShapeAdapter purpleDiamondAdapter = new ShapeAdapter(purpleDiamond);
         drawer.addBasicShape(purpleDiamondAdapter);
 
-        /// Add a diamond shape which is in the background with color "somethingElse" using ShapeAdapter
+        // Add a diamond shape which is in the background with color "somethingElse" using ShapeAdapter
         ShapeDiamond hiddenDiamond = new ShapeDiamond("somethingElse");
         ShapeAdapter hiddenDiamondAdapter = (new ShapeAdapter(hiddenDiamond));
         drawer.addBasicShape(hiddenDiamondAdapter);

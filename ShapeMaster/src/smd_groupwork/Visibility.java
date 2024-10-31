@@ -2,7 +2,7 @@ package smd_groupwork;
 
 public abstract class Visibility {
 
-		public boolean inBackground = false;
+		private boolean inBackground = false;
 		
 		public void changeVisibility() {
 			inBackground = !inBackground;
